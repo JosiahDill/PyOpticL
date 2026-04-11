@@ -99,7 +99,7 @@ def fnc(x=0, y=0, angle=0, mirror=optomech.mirror_mount_km05, x_split=False, thu
     # Output branch
     baseplate.place_element_along_beam(
         "Output Mirror 1", optomech.d_mirror, beam,
-        beam_index=0b111, distance=4 * layout.inch + 12,
+        beam_index=0b111, distance=4 * layout.inch + 17,
         angle=45,
         mount_type=optomech.mirror_mount_km05dr,
         mount_args=dict(thumbscrews=thumbscrews), flip=True
@@ -141,7 +141,7 @@ def fnc(x=0, y=0, angle=0, mirror=optomech.mirror_mount_km05, x_split=False, thu
     # Photodetector branch
     baseplate.place_element_along_beam(
         "PD Mirror 1", optomech.d_mirror, beam,
-        beam_index=0b1101, distance=4.4 * layout.inch + 2,
+        beam_index=0b1101, distance=4.4 * layout.inch + 7,
         angle=225,
         mount_type=optomech.mirror_mount_km05dr,
         mount_args=dict(thumbscrews=thumbscrews), flip=True
