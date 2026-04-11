@@ -155,13 +155,13 @@ def fnc(x=0, y=0, angle=0, mirror=optomech.mirror_mount_km05, x_split=False, thu
 
     baseplate.place_element_along_beam(
         "Iris", optomech.pinhole_ida12, beam,
-        beam_index=0b1101, distance=4.95 * layout.inch + 5,
+        beam_index=0b1101, distance=4.95 * layout.inch + 10,
         angle=layout.cardinal['left']
     )
 
     baseplate.place_element_along_beam(
         "Photodetector", optomech.photodetector_pda10a2, beam,
-        beam_index=0b1101, distance=1.35 * layout.inch + 5,
+        beam_index=0b1101, distance=1.35 * layout.inch ,
         angle=layout.cardinal['right']
     )
 
